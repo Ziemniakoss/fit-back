@@ -1,0 +1,15 @@
+spring:
+  datasource:
+    password: admin
+    username: postgres
+    url: "jdbc:postgresql://localhost:5432/postgres"
+  jpa:
+    hibernate:
+      ddl-auto: update
+
+
+jwt:
+  http-header: "Authorization"
+  token-prefix: "Bearer "
+  expirationTime: 3600000
+  secret: "secret"
