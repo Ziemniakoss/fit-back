@@ -1,7 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a50ac96-d470-484f-919e-50e1090b247a" name="Default Changelist" comment="" />
+    <list default="true" id="5a50ac96-d470-484f-919e-50e1090b247a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/fit-back.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/fitback.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/controller/SportController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/controller/SportController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/dto/SportDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/dto/SportDto.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/model/Sport.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/model/Sport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/model/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/model/UserRole.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/model/UserRole.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/model/UserSport.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/model/UserSport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/repository/SportRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/repository/SportRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/repository/UserRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/repository/UserSportRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/repository/UserSportRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/security/CustomUserDetailsService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/security/CustomUserDetailsService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/security/SecurityConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/security/authenication/JsonObjectAuthenticationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/security/authenication/JsonObjectAuthenticationFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/security/authenication/LoginCredentials.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/security/authenication/LoginCredentials.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/security/authenication/RestAuthenticationFailureHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/security/authenication/RestAuthenticationFailureHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/security/authenication/RestAuthenticationSuccessHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/security/authenication/RestAuthenticationSuccessHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/security/authorization/JwtAuthorizationFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/security/authorization/JwtAuthorizationFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/service/SportService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/service/SportService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/service/UserService.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +59,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1XRdn9vFbBrlhVDmfwFQE3GtPmi" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -38,6 +69,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -52,7 +86,7 @@
   <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="pl.fitback.App" />
-      <module name="fitback" />
+      <module name="fit-back" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="pl.fitback.*" />
@@ -91,10 +125,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1581013004576</updated>
+      <workItem from="1582766493345" duration="158000" />
     </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="2541" y="207" width="668" height="700" key="#App" timestamp="1582766637437">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2541" y="207" width="668" height="700" key="#App/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582766637437" />
     <state x="285" y="243" key="#com.intellij.ide.util.MemberChooser" timestamp="1581019021762">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -103,22 +145,26 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="717" y="211" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1581022346764" />
-    <state width="953" height="334" key="GridCell.Tab.0.bottom" timestamp="1581021990585">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1874" height="275" key="GridCell.Tab.0.bottom" timestamp="1582766650825">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="953" height="334" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1581021990585" />
-    <state width="953" height="334" key="GridCell.Tab.0.center" timestamp="1581021990585">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1874" height="275" key="GridCell.Tab.0.bottom/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582766650825" />
+    <state width="1874" height="275" key="GridCell.Tab.0.center" timestamp="1582766650825">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="953" height="334" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1581021990585" />
-    <state width="953" height="334" key="GridCell.Tab.0.left" timestamp="1581021990585">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1874" height="275" key="GridCell.Tab.0.center/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582766650825" />
+    <state width="1874" height="275" key="GridCell.Tab.0.left" timestamp="1582766650825">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="953" height="334" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1581021990585" />
-    <state width="953" height="334" key="GridCell.Tab.0.right" timestamp="1581021990585">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="1874" height="275" key="GridCell.Tab.0.left/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582766650825" />
+    <state width="1874" height="275" key="GridCell.Tab.0.right" timestamp="1582766650825">
+      <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state width="953" height="334" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1581021990585" />
+    <state width="1874" height="275" key="GridCell.Tab.0.right/0.27.1920.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1582766650825" />
     <state width="1372" height="347" key="GridCell.Tab.1.bottom" timestamp="1581021488954">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
