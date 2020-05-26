@@ -8,7 +8,6 @@ import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.Set;
-import java.util.UUID;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -19,16 +18,22 @@ public class User {
 
     @Id
     @GeneratedValue
-    @JsonIgnore
-    private UUID id;
+    private Long id;
+
+    @Column
+    private String mail;
 
     @Column
     private String login;
 
     @Column
-    @JsonIgnore
     private String password;
 
+    @Column
+    private Integer pulse;
+
+    @Column
+    private Float weight;
 
     @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
     private Set<UserSport> userSports;

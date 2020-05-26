@@ -5,8 +5,6 @@ import org.springframework.stereotype.Service;
 import pl.fitback.model.Sport;
 import pl.fitback.repository.SportRepository;
 
-import java.util.UUID;
-
 @Service
 public class SportService {
 
@@ -21,7 +19,7 @@ public class SportService {
         return sportRepository.save(sport);
     }
 
-    public Sport getSport(UUID sportId) {
+    public Sport getSport(Long sportId) {
         return sportRepository.findById(sportId).orElseThrow(IllegalArgumentException::new);
     }
 }

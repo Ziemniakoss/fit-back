@@ -7,8 +7,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="fitback" />
         <module name="fit-back" />
+        <module name="prjketbartek" />
+        <module name="fitback" />
       </profile>
     </annotationProcessing>
   </component>
@@ -16,6 +17,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="fit-back" options="-parameters" />
       <module name="fitback" options="-parameters" />
+      <module name="prjketbartek" options="-parameters" />
     </option>
   </component>
 </project>

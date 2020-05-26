@@ -9,7 +9,6 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
-import java.util.UUID;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -20,7 +19,7 @@ public class Sport {
 
     @Id
     @GeneratedValue
-    private UUID id;
+    private Long id;
 
     @Column
     private String name;
