@@ -8,9 +8,10 @@ import pl.fitback.model.User;
 import pl.fitback.service.UserService;
 
 import java.security.Principal;
+import java.util.UUID;
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/users")
 public class UserController {
 
     private UserService userService;
@@ -21,10 +22,12 @@ public class UserController {
     }
 
     @PostMapping(path = "/register")
-    public ResponseEntity registerNewUser(@RequestBody User user) {
+    public ResponseEntity registerNewUser(@RequestBody User newUser) {
+        System.out.println(newUser.getLogin());
+        System.out.println(newUser.getPassword());
 
         try {
-            userService.createNewUser(user);
+            userService.createNewUser(newUser);
         } catch (IllegalArgumentException e) {
             return ResponseEntity.status(HttpStatus.CONFLICT).body(e.getMessage());
         }
@@ -37,43 +40,10 @@ public class UserController {
         return ResponseEntity.ok(userService.getCurrentUser());
     }
 
-    @PostMapping(path = "/{sportId}/signup")
-    public ResponseEntity signUpForSport(@PathVariable Long sportId, Principal principal) {
+    @PostMapping(path = "/{sportId}/singup")
+    public ResponseEntity singUpForSport(@PathVariable UUID sportId, Principal principal) {
         userService.signUpForSport(sportId);
 
         return ResponseEntity.ok().build();
     }
-
-  /*  @GetMapping(path = "/logout")
-    public boolean signOut(@RequestParam Long id){
-        return userService.logout(id);
-    }*/
-
-    @PostMapping(path = "/addPulse")
-    public boolean addPulse(@RequestBody  User user){
-        return userService.addPulse(user);
-    }
-
-    @PostMapping(path = "/addWeight")
-    public boolean addWeight(@RequestBody User user){
-        return userService.addWeight(user);
-    }
-
-    @GetMapping(path = "/showPulse/{id}")
-    public Integer getPulse(@PathVariable Long id){
-        return userService.getUserPulseById(id);
-    }
-
-    @GetMapping(path = "/showWeight/{id}")
-    public Float getWeight(@PathVariable Long id){
-        return userService.getUserWeightById(id);
-    }
-
-
-
-
-
-
-
-
 }
