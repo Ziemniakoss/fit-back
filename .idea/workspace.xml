@@ -1,35 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5a50ac96-d470-484f-919e-50e1090b247a" name="Default Changelist" comment="Modyfikacja endpointow">
-      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/fitback.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/fit-back.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="5a50ac96-d470-484f-919e-50e1090b247a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/fitback/controller/HelloController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fitback/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fitback/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fitback/dto/UserDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fitback/mapper/UserMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fitback/model/Sport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fitback/model/Sport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fitback/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fitback/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fitback/repository/SportRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fitback/repository/SportRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fitback/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fitback/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fitback/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fitback/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fitback/service/SportService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fitback/service/SportService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fitback/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fitback/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/controller/UserController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/model/Sport.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/model/Sport.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/repository/SportRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/repository/SportRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/repository/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/repository/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/security/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/security/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/service/SportService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/service/SportService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/pl/fitback/service/UserService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,8 +17,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -136,6 +110,14 @@
       <workItem from="1590508544041" duration="104000" />
       <workItem from="1591042961433" duration="770000" />
     </task>
+    <task id="LOCAL-00001" summary="dodanie wersji JWT">
+      <created>1591483567302</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1591483567302</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,13 +138,15 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Modyfikacja endpointow" />
-    <option name="LAST_COMMIT_MESSAGE" value="Modyfikacja endpointow" />
+    <MESSAGE value="dodanie wersji JWT" />
+    <option name="LAST_COMMIT_MESSAGE" value="dodanie wersji JWT" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1591043250536">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="-1335" y="114" key="CommitChangelistDialog2" timestamp="1591483566895">
+      <screen x="-1920" y="0" width="1920" height="1040" />
     </state>
     <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591043250536" />
+    <state x="-1335" y="114" key="CommitChangelistDialog2/0.0.2560.1400/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591483566895" />
     <state x="100" y="100" width="1720" height="840" key="DiffContextDialog" timestamp="1590508480070">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -203,6 +187,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="1860" height="344" key="GridCell.Tab.1.right/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590453948083" />
+    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2" timestamp="1591483573602">
+      <screen x="-1920" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-1368" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591483573602" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1590508543316">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
