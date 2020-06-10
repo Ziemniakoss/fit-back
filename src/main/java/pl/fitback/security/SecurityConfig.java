@@ -8,7 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 import org.springframework.security.config.http.SessionCreationPolicy;
-import org.springframework.security.crypto.factory.PasswordEncoderFactories;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.HttpStatusEntryPoint;
 import org.springframework.stereotype.Component;
@@ -24,7 +24,7 @@ import java.util.Arrays;
 import java.util.Collections;
 
 @Component
-public class SecurityConfig extends WebSecurityConfigurerAdapter {
+public class  SecurityConfig extends WebSecurityConfigurerAdapter {
 
     private final RestAuthenticationSuccessHandler authenticationSuccessHandler;
     private final RestAuthenticationFailureHandler authenticationFailureHandler;
@@ -73,7 +73,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
     @Bean
     public PasswordEncoder passwordEncoder() {
-        return PasswordEncoderFactories.createDelegatingPasswordEncoder();
+        return new BCryptPasswordEncoder(4);
+//        return PasswordEncoderFactories.createDelegatingPasswordEncoder();
     }
 
     @Bean

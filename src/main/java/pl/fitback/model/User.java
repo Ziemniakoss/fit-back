@@ -26,7 +26,7 @@ public class User {
     private String login;
 
     @Column
-    @JsonIgnore
+//    @JsonIgnore
     private String password;
 
 
