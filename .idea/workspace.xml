@@ -20,34 +20,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a50ac96-d470-484f-919e-50e1090b247a" name="Default Changelist" comment="zmiany w pom">
-      <change afterPath="$PROJECT_DIR$/.idea/fit-back.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/fitback/dto/HibernateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/fitback/model/hibernate_models/ExerciseCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/fitback/model/hibernate_models/Exercises.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/fitback/model/hibernate_models/Quests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/fitback/model/hibernate_models/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/fitback/model/hibernate_models/UserExercise.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/fitback/model/hibernate_models/UserExercisesId.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/fitback/model/hibernate_models/WeightMeasurements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/fit-back.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/fit-back.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fitback/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fitback/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/fitback/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/fitback/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/fitback.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/App.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/controller/SportController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/controller/UserController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/dto/SportDto.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/model/Sport.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/model/UserRole.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/model/UserSport.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/repository/SportRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/repository/UserRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/repository/UserSportRepository.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/security/CustomUserDetailsService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/security/SecurityConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/security/authenication/JsonObjectAuthenticationFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/security/authenication/LoginCredentials.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/security/authenication/RestAuthenticationFailureHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/security/authenication/RestAuthenticationSuccessHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/security/authorization/JwtAuthorizationFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/service/SportService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/pl/fitback/service/UserService.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +76,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../projekt/fitback" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/pl/fitback/dto" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -104,6 +93,10 @@
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="pl.fitback.model" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IntellijStuff\Projects\fit-back\src\main\java\pl\fitback\dto" />
+      <recent name="D:\IntellijStuff\Projects\fit-back\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.App">
@@ -149,6 +142,8 @@
       <workItem from="1591484502345" duration="897000" />
       <workItem from="1591617892125" duration="9000" />
       <workItem from="1591813765239" duration="1984000" />
+      <workItem from="1591967776890" duration="2283000" />
+      <workItem from="1591979964500" duration="1791000" />
     </task>
     <task id="LOCAL-00001" summary="dodanie wersji JWT">
       <created>1591483567302</created>
@@ -168,19 +163,20 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="2" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Modyfikacja endpointow" />
@@ -193,9 +189,26 @@
       <screen x="0" y="27" width="1920" height="1053" />
     </state>
     <state x="593" y="150" width="724" height="786" key="#App/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1591484570666" />
-    <state x="-1335" y="114" key="CommitChangelistDialog2" timestamp="1591483566895">
-      <screen x="-1920" y="0" width="1920" height="1040" />
+    <state x="552" y="178" key="#Assign_Data_Sources" timestamp="1591969943349">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="552" y="178" key="#Assign_Data_Sources/0.0.1920.1040/-1600.0.1600.1160@0.0.1920.1040" timestamp="1591969943349" />
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser" timestamp="1591981559230">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="765" y="204" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040/-1600.0.1600.1160@0.0.1920.1040" timestamp="1591981559230" />
+    <state x="627" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1591980684635">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="627" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040/-1600.0.1600.1160@0.0.1920.1040" timestamp="1591980684635" />
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591979998605">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="267" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1600.0.1600.1160@0.0.1920.1040" timestamp="1591979998605" />
+    <state x="585" y="114" key="CommitChangelistDialog2" timestamp="1591981792917">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/-1600.0.1600.1160@0.0.1920.1040" timestamp="1591981792917" />
     <state x="585" y="114" key="CommitChangelistDialog2/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591043250536" />
     <state x="-1335" y="114" key="CommitChangelistDialog2/0.0.2560.1400/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591483566895" />
     <state x="100" y="100" width="1720" height="840" key="DiffContextDialog" timestamp="1590508480070">
@@ -259,9 +272,10 @@
     </state>
     <state x="-1368" y="253" key="Vcs.Push.Dialog.v2/0.0.2560.1400/-1920.0.1920.1040@-1920.0.1920.1040" timestamp="1591483573602" />
     <state x="552" y="283" width="800" height="535" key="Vcs.Push.Dialog.v2/1920.0.1920.1080/0.27.1920.1053@0.27.1920.1053" timestamp="1591485160914" />
-    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1590508543316">
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1591979965449">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1600.0.1600.1160@0.0.1920.1040" timestamp="1591979965449" />
     <state x="656" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590508543316" />
     <state x="769" y="437" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1590508335374">
       <screen x="0" y="0" width="1920" height="1040" />
