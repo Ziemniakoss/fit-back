@@ -1,29 +1,9 @@
-package pl.fitback.model;
+package pl.fitback.dto;
 
-public class User {
-	private int id;
-
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-
+public class UserCreationDTO {
 	private String login;
 	private String password;
 	private double weight;
-
-	public User(int id, String login, String password, double weight) {
-		this.id = id;
-		this.login = login;
-		this.password = password;
-		this.weight = weight;
-	}
-
-	public User() {
-	}
 
 	public String getLogin() {
 		return login;

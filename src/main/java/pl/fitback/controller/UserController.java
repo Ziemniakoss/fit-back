@@ -4,46 +4,38 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import pl.fitback.dto.UserCreationDTO;
 import pl.fitback.model.User;
 import pl.fitback.service.UserService;
-
-import java.security.Principal;
-import java.util.UUID;
 
 @RestController
 @RequestMapping("/users")
 public class UserController {
 
-    private UserService userService;
+	private UserService userService;
 
-    @Autowired
-    public UserController(UserService userService) {
-        this.userService = userService;
-    }
+	@Autowired
+	public UserController(UserService userService) {
+		this.userService = userService;
+	}
 
-    @PostMapping(path = "/register")
-    public ResponseEntity registerNewUser(@RequestBody User newUser) {
-        System.out.println(newUser.getLogin());
-        System.out.println(newUser.getPassword());
+	@PostMapping(path = "/register")
+	public ResponseEntity registerNewUser(@RequestBody UserCreationDTO newUser) {
+		System.out.println(newUser.getLogin());
+		System.out.println(newUser.getPassword());
+		System.out.println(newUser.getWeight());
+		try {
+			userService.createNewUser(new User(0, newUser.getLogin(), newUser.getPassword(), newUser.getWeight()));
+		} catch (IllegalArgumentException e) {
+			return ResponseEntity.status(HttpStatus.CONFLICT).body(e.getMessage());
+		}
+		return ResponseEntity.ok().build();
+	}
 
-        try {
-            userService.createNewUser(newUser);
-        } catch (IllegalArgumentException e) {
-            return ResponseEntity.status(HttpStatus.CONFLICT).body(e.getMessage());
-        }
+	@GetMapping(path = "/me")
+	public ResponseEntity getMe() {
+		return ResponseEntity.ok(userService.getCurrentUser());
+	}
 
-        return ResponseEntity.ok().build();
-    }
-
-    @GetMapping(path = "/me")
-    public ResponseEntity getMe() {
-        return ResponseEntity.ok(userService.getCurrentUser());
-    }
-
-    @PostMapping(path = "/{sportId}/singup")
-    public ResponseEntity singUpForSport(@PathVariable UUID sportId, Principal principal) {
-        userService.signUpForSport(sportId);
-
-        return ResponseEntity.ok().build();
-    }
+   
 }

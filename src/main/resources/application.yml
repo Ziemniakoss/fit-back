@@ -1,8 +1,8 @@
 spring:
   datasource:
-    password: admin
+    password: postgres
     username: postgres
-    url: "jdbc:postgresql://localhost:5432/postgres"
+    url: "jdbc:postgresql://localhost:5432/fitapp"
   jpa:
     hibernate:
       ddl-auto: update
