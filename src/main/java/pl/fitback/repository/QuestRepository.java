@@ -16,10 +16,8 @@ public class QuestRepository {
 	private final JdbcTemplate jdbcTemplate;
 	private final UserService userService;
 	private final String BASE_QUERY =
-			"SELECT q.id as id, q.name as name, q.description as description, q.xp as xp, (user_id IS NOT NULL) as done" +
-					" FROM quests q " +
-					" LEFT JOIN users_quests uq ON q.id = uq.quest_id " +
-					" WHERE (user_id = ? OR user_id is NULL) ";
+			"SELECT id, name,description,xp ," +
+					"(EXISTS(Select 1 FROM users_quests WHERE user_id = ? AND quest_id = id)) as done FROM quests ";
 
 	public QuestRepository(JdbcTemplate jdbcTemplate, UserService userService) {
 		this.jdbcTemplate = jdbcTemplate;
@@ -28,7 +26,7 @@ public class QuestRepository {
 
 	public Quest get(int id) {
 		try {
-			return jdbcTemplate.queryForObject(BASE_QUERY + " AND q.id = ?",
+			return jdbcTemplate.queryForObject(BASE_QUERY + " WHERE id = ?",
 					(rs, rn) -> map(rs), userService.getCurrentUser().getId(), id);
 		} catch (EmptyResultDataAccessException e) {
 			return null;

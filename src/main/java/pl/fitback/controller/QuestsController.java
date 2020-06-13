@@ -22,7 +22,7 @@ public class QuestsController {
 		return ResponseEntity.ok(questService.getAllQuests());
 	}
 
-	@GetMapping("/quests/{id}")
+	@PostMapping("/quests/{id}")
 	public ResponseEntity get(@PathVariable int id, @RequestBody QuestUpdateRequestDTO req) {
 		try {
 			Quest q = questService.get(id);
@@ -34,11 +34,10 @@ public class QuestsController {
 		}
 	}
 
-	@PostMapping("/quests/{id}")
+	@GetMapping("/quests/{id}")
 	public ResponseEntity updateStatus(@PathVariable int id) {
 		try {
-			questService.updateStatus(questService.get(id));
-			return ResponseEntity.ok("Updated");
+			return ResponseEntity.ok(questService.get(id));
 		} catch (QuestDOesNotExists questDOesNotExists) {
 			return ResponseEntity.status(HttpStatus.NOT_FOUND).body("Quest not found");
 		}
