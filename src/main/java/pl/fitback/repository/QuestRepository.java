@@ -34,7 +34,7 @@ public class QuestRepository {
 	}
 
 	public List<Quest> getAll() {
-		return jdbcTemplate.query(BASE_QUERY, (rs, rn) -> map(rs), userService.getCurrentUser().getId());
+		return jdbcTemplate.query(BASE_QUERY+" ORDER BY done", (rs, rn) -> map(rs), userService.getCurrentUser().getId());
 	}
 
 	public void update(Quest quest) throws QuestDOesNotExists {
