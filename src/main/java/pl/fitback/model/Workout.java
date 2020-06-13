@@ -1,17 +1,48 @@
 package pl.fitback.model;
 
-import java.sql.Date;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
+import java.sql.Timestamp;
 
 public class Workout {
-	private double duration;
+	private int id;
+	private int duration;
 	private Exercise exercise;
-	private Date date;
+	private Timestamp date;
+	@JsonIgnore
+	private User user;
 
-	public double getDuration() {
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
+	}
+
+	public int getCalories() {
+		return calories;
+	}
+
+	public void setCalories(int calories) {
+		this.calories = calories;
+	}
+
+	private int calories;
+
+	public int getDuration() {
 		return duration;
 	}
 
-	public void setDuration(double duration) {
+	public void setDuration(int duration) {
 		this.duration = duration;
 	}
 
@@ -23,11 +54,11 @@ public class Workout {
 		this.exercise = exercise;
 	}
 
-	public Date getDate() {
+	public Timestamp getDate() {
 		return date;
 	}
 
-	public void setDate(Date date) {
+	public void setDate(Timestamp date) {
 		this.date = date;
 	}
 }
